@@ -5,7 +5,7 @@ from phonenumbers import geocoder
 
 def check_details(phone_no):
     information = []
-   
+    number = phonenumbers.parse(phone_no)
     information.append(geocoder.description_for_number(number, 'en'))
     information.append(carrier.name_for_number(number, 'en'))
     return information

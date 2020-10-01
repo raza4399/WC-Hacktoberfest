@@ -6,4 +6,4 @@ x = instaloader.Instaloader()
 print(x.download_profile(username, profile_pic_only=True))
 
 
-print()
+print(username)
